@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    background: #aaaaaa;
+}
+@font-face {font-family: 'iconfont';   
+    src: url('../file/iconfont.eot'); /* IE9*/  
+    src: url('../file/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */  
+    url('../file/iconfont.woff') format('woff'), /* chrome、firefox */  
+    url('../file/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/  
+    url('../file/iconfont.svg?#uxiconfont') format('svg'); /* iOS 4.1- */  
+} 
+#bottom{
+    position: fixed;
+    margin-right: 270px;
+    bottom: 10%;
+    right: 0;
+    left: 0;
+    height: 60px;
+    -webkit-transition: all ease-in-out .4s;
+    transition: all ease-in-out .4s;
+}
+#progress-bar{
+    user-select: none;
+    position: absolute;
+    left: 10px;
+    right: 0;
+    height: 35px;
+    bottom: 0;
+}
+#bottom #progress-bar::before, #bottom #progress-bar::after {
+    position: absolute;
+    top: 0;
+    height: 6px;
+    content: ' ';
+}
+#bottom #progress-bar::before {
+    left: 0;
+    width: 45px;
+    background-color: #9D0300;
+}
+#bottom #progress-bar .progress-line {
+    position: relative;
+    width: 50%;
+    cursor: pointer;
+    z-index: 2;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    background-clip: padding-box;
+    top: -10px;
+    left: 45px;
+    -webkit-transition: width ease-in-out .7s;
+    transition: width ease-in-out .7s;
+}
+.progress-line .avbl {
+    height: 6px;
+    background-color: #d3d3d3;
+    width: 100%;
+    cursor: pointer;
+}
+.progress-line i {
+    display: block;
+    width: 3px;
+    height: 6px;
+    position: absolute;
+    background-color: #e4a600;
+    top: 0;
+}
+.timecode {
+    font-size: 10px;
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    top: -2.6em;
+    margin-left: -2em;
+}
+.ghost-timecode {
+    transition: .3s opacity 0s;
+    -webkit-transition: .3s opacity 0s;
+    opacity: 0;
+    z-index: 0;
+}
+.timecode.ghost-timecode .box {
+    cursor: pointer;
+    color: white;
+    background-color: #9D0300;
+}
+.timecode.ghost-timecode .box::after {
+    border-top-color: #9D0300;
+}
+.timecode .box {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+    position: relative;
+    background: #ffffff;
+    color: black;
+    height: 2em;
+    box-sizing: border-box;
+    padding: .3em .8em;
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    font-family: Verdana,sans-serif;
+}
+.timecode .box::after {
+    top: 100%;
+    left: 2em;
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-top-color: #ffffff;
+    border-width: .5em;
+    margin-left: -0.5em;
+}
+.loader {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear .25s,opacity .25s linear;
+    width: 21px;
+    height: 9px;
+    // content: url(../img/aj2ax-loader5.gif);
+    z-index: 21;
+}
+.loader {
+    // content: url(../img/ajax-loader5@2x.gif);
+}
+.timecode .loader {
+    position: absolute;
+    left: -2.5em;
+    top: .6em;
+}
+.progress-line .played {
+    background-color: #9D0300;
+    height: 6px;
+    float: left;
+    width: 15%;
+    cursor: pointer;
+}
+#bottom #progress-bar #playpause {
+    font-family: iconfont;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+    position: absolute;
+    font-size: 25px;
+    top: 8px;
+    left: 10px;
+    z-index: 10;
+}
+#bottom #progress-bar #playpause{
+    color: #ffffff;
+}
+#bottom #progress-bar #playpause.play:before {
+    content: "f";
+}
+#bottom #progress-bar #playpause.pause:before {
+    content: "e";
+    margin-left: -0.08em;
+}
+#bottom #progress-bar #calendar {
+    position: absolute;
+    left: 45px;
+    right: 0;
+    top: 6px;
+    white-space: nowrap;
+}
+#bottom #progress-bar #calendar::before {
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 32px;
+    background-color: rgba(70,70,70,0.34);
+    content: ' ';
+    left: -45px;
+    z-index: -1;
+}
+#bottom #progress-bar #calendar div.clickable {
+    color: white;
+}
+#bottom #progress-bar #calendar div {
+    float: left;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 8px 0 0 8px;
+    font-size: 12px;
+    height: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #bdbdbd;
+    background-color: rgba(70,70,70,0.34);
+    margin-left: 1px;
+    width: calc(10% - 1px);
+    cursor: pointer;
+}
+#bottom #progress-bar::before, #bottom #progress-bar::after {
+    position: absolute;
+    top: 0;
+    height: 6px;
+    content: ' ';
+}
+.contrl-box{
+    position: fixed;
+    right: 200px;
+    bottom: 10%;
+    label{
+        margin-right: 5px;
+    }
+}
