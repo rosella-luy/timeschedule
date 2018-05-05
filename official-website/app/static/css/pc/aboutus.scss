@@ -1,0 +1,167 @@
+$margin: 0 10%; 
+@mixin color(){
+    color: #aaaaaa;
+    font-size: 0.13rem;
+}
+.aboutUs{
+    margin-top: 0.8rem;
+    .bannerBox{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        h1{
+            color: #ffffff;
+            font-size: 0.6rem;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 35%;
+        }
+    }
+    .content{
+        background: #ffffff;
+        p{
+            @include color();
+        }
+    }
+    .introCompany{
+        width: 90%;
+        max-width: 12.3rem;
+        margin: 0 auto;
+        overflow: hidden;
+        h1{
+            margin-top: 0.7rem;
+            margin-bottom: 0.54rem;
+        }
+        .inforCompany{
+            img{
+                float: left;
+                width: 35%;
+                margin: 3% 5%;
+            }
+            p{
+                line-height: 2;
+                font-size: 0.16rem;
+                color: #38454d;
+            }
+        }
+        
+    }
+    .introTeam{
+        width: 90%;
+        max-width: 12.3rem;
+        padding: 0 0.5rem;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        h1{
+            margin-top: 1.04rem;
+            margin-bottom: 0.46rem;
+        }
+        #listBox{
+            width: 100%;
+            overflow: hidden;
+            .doctorList{
+                height: 5.3rem;
+                overflow: hidden;
+                li{
+                    box-sizing: border-box;
+                    float: left;
+                    border: 1px solid #e7e7e7;
+                    height: 100%;
+                    .doctorPhoto{
+                        width: 100%;
+                        height: 2.74rem;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                        }
+                        margin-bottom: 0.4rem;
+                    }
+                    h4,h6{
+                        text-align: center;
+                        margin-bottom: 0.2rem;
+                    }
+                    h4{
+                        font-size: 0.24rem;
+                        color: #333333;
+                    }
+                    h6{
+                        font-size: 0.12rem;
+                        color: #333333;
+                    }
+                    p{
+                        padding: 0 0.18rem;
+                        font-size: 0.12rem;
+                        color: #666666;
+                        line-height: 2;
+                    }
+                }
+                transition: margin-left 0.5s;
+                -moz-transition: margin-left 0.5s;  /* Firefox 4 */
+                -webkit-transition: margin-left 0.5s;   /* Safari 和 Chrome */
+                -o-transition: margin-left 0.5s;
+            }
+        }
+        #prev,#next{
+            position: absolute;
+            top: 50%;
+            border: 1px solid #e7e7e7;
+            width: 0.30rem;
+            height: 0.30rem;
+            line-height: 0.30rem;
+            text-align: center;
+            font-size: 0.2rem;
+        }
+        #prev{
+            left: 0;
+        }
+        #next{
+            right: 0;
+        }
+    }
+    .concatUs{
+        width: 90%;
+        max-width: 12.3rem;
+        margin: 0 auto;
+        h1{
+            margin-top: 0.87rem;
+            margin-bottom: 0.53rem;
+        }
+        p{
+            line-height: 2;
+        }
+        .fatherBox{
+            display: table;
+            vertical-align: middle;
+            border-top: 1px solid #e7e7e7;
+            width: 100%;
+            overflow: hidden;
+            padding: 0.38rem 0;
+            .floatBox.inforC,.addressImg{
+                display: table-cell;
+                vertical-align: middle;
+                width: 50%;
+            }
+            h4{
+                color: #333333;
+                font-size: 0.18rem;
+                margin-bottom: 0.4rem;
+            }
+            img{
+                width: 100%;
+                height: 2.52rem;
+            }
+            &:first-child{
+                margin-left: 0;
+            }
+            p{
+                color: #666666;
+                font-size: 0.14rem;
+                line-height: 2;
+            }
+        }
+    }
+}

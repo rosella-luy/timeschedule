@@ -1,0 +1,116 @@
+.joinUs{
+    margin-top: 0.8rem;
+    .banner{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        h1{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            font-size: 0.4rem;
+            margin-top: -0.2rem;
+            color: #ffffff;
+        }
+    }
+    .recruitment{
+        overflow: hidden;
+        width: 90%;
+        max-width: 12.3rem;
+        margin: 0 auto;
+        .sideBar{
+            width: 100%;
+            .recruitmentNav{
+                text-align: center;
+                height: 1.5rem;
+                line-height: 1.5rem;
+                li{
+                    display: inline;
+                    padding: 0.1rem 0;
+                    font-size: 0.18rem;
+                    text-align: center;
+                    margin: 0 0.71rem;
+                    color: #333333;
+                    img{
+                        float: left;
+                        height: 100%;
+                    }
+                }
+                li.on{
+                    border-bottom: 2px solid #0abaec;
+                }
+            }
+        }
+        .recruitmentContent{
+            .recruitmentLine{
+                margin: 2.5% 0; 
+                border: 0.01rem solid #e7e7e7;
+                .titleBox{
+                    overflow: hidden;
+                    padding: 0.23rem 0.29rem 0.23rem 0.26rem;
+                    display: flex;
+                    p{
+                        float: left;
+                        vertical-align: middle;
+                        font-size: 0.18rem;
+                        color: #333333;
+                        height: 0.22rem;
+                        line-height: 0.22rem;
+                        span{
+                            float: left;
+                            background: url(../../img/icons.png) -208px 0px no-repeat;
+                            width: 0.22rem;
+                            margin-right: 0.31rem;
+                            height: 0.22rem;
+                        }
+                        span.on{
+                            height: 0.03rem;
+                            margin-top: 0.09rem;
+                            margin-bottom: 0.09rem;
+                            background: url(../../img/icons.png) -208px -28px no-repeat;
+                        }
+                        &:first-child{
+                            flex: 7;
+                        }
+                        &:nth-child(2){
+                            flex: 5;
+                        }
+                        &.date{
+                            flex: 1;
+                            font-size: 0.14rem;
+                            color: #999999;
+                            text-align: right;
+                        }
+                    }
+                }
+                .contentBox{
+                    height: 0;
+                    color: #666666;
+                    font-size: 0.14rem;
+                    padding-left: 0.82rem;
+                    overflow: hidden;
+                    p{
+                        line-height: 2;
+                        &:first-child{
+                            margin-top: 0.19rem;
+                        }
+                        &:last-child{
+                            margin-bottom: 0.4rem;
+                        }
+                    }
+                    transition: height 1s;
+                }
+                &:first-child{
+                    margin-top: 0;
+                    .contentBox{
+                        height: auto;
+                    }
+                }
+            }
+            
+        }
+        margin-bottom: 10%;
+    }
+}

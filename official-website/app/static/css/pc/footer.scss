@@ -1,0 +1,76 @@
+$border: 0.01rem solid #062346;
+footer{
+    .box1{
+        background: #01283f;
+        padding: 0.6rem 0 0.44rem 0;
+        .attentionBox{
+            color: #ffffff;
+            border-top: $border;
+            width: 90%;
+            max-width: 12.3rem;
+            margin: 0 auto;
+            overflow: hidden;
+            li{
+                float: left;
+                padding: 0 0.85rem;
+                text-align: left;
+                h3{
+                    font-size: 0.16rem;
+                    padding:0.10rem 0;
+                    color: #ffffff;
+                }
+                p{
+                    font-size: 0.16rem;
+                    padding: 0.10rem 0;
+                    color: #a9bcc7;
+                    a{
+                        color: #a9bcc7;
+                    }
+                }
+                &:first-child{
+                    padding-left: 0.24rem;
+                }
+                &:nth-child(3){
+                    padding-right: 0.24rem;
+                }
+                &:last-child{
+                    padding: 0;
+                    padding-right: 0.2rem;
+                    float: right;
+                    text-align: right;
+                    .phoneNum{
+                        font-size: 0.2rem;
+                    }
+                    .email,.address{
+                        font-size: 0.14rem;
+                    }
+                }
+            }
+        }
+    }
+    .box2{
+        background: #000b12;
+        .Inscribed{
+            font-size: 0.12rem;
+            color: #8393a1;
+            overflow: hidden;
+            width: 90%;
+            max-width: 12.3rem;
+            margin: 0 auto;
+            padding: 0.22rem 0;
+            .left{
+                float: left;
+                span{
+                    margin-left: 0.28rem;
+                }
+            }
+            .right{
+                float: right;
+                margin-right: 0.2rem;
+                span{
+                    margin-right: 0.05rem;
+                }
+            }
+        }
+    }
+}

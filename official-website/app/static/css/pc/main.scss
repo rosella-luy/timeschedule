@@ -1,0 +1,97 @@
+html{
+    font-size: 100px;
+    min-width: 1000px;
+}
+@media screen and (max-width: 1100px){
+    html{font-size: 70px;}
+}
+body{
+    font-size: 0.16rem;
+    width: 100%;
+}
+h1{
+    font-size: 0.35rem;
+    font-weight: lighter;
+    text-align: center;
+    color: #000000;
+    font-family: ylh35;
+}
+.banner{
+    width: 100%;
+}
+.bannerBack{
+    height: 6.44rem;
+    .bannerContent{
+        height: 100%;
+        width: 90%;
+        max-width: 12.3rem;
+        margin: 0 auto;
+        position: relative;
+        .TextInfo{
+            position: absolute;
+            top: 46%;
+            left: 0;
+            width:40.8%;
+            h1,h2,p{
+                color: #ffffff;
+            }
+            h1{
+                text-align: left;
+                font-size: 0.6rem;
+                margin-bottom: 0.19rem;
+            }
+            h2{
+                font-size: 0.31rem;
+            }
+            p{
+                margin-top: 0.4rem;
+                font-size: 0.16rem;
+                line-height: 2;
+                opacity: 0.8;
+            }
+            &.hasP{
+                top: 30%;
+            }
+        }
+        img{
+            position: absolute;
+            bottom: -0.5rem;
+            right: 0;
+            width: 56.3%;
+        }
+    }
+    // img,.inforText{
+    //     position: absolute;
+    //     left: 50%;
+    //     top: 1.20rem;
+    //     width: 30%;
+    //     margin-left: -15%;
+    // }
+    // .inforText{
+    //     h2,h3{
+    //         color: #ffffff;
+    //         text-align: center;
+    //         font-weight: bolder;
+    //     }
+    //     h2{
+    //         font-size: 0.40rem;
+    //         margin-bottom: 3%;
+    //     }
+    //     h3{
+    //         font-size: 0.30rem;
+    //     }
+    // }
+    // .sigleLine{
+    //     h2{
+    //         font-size: 0.40rem;
+    //         color: #ffffff;
+    //         text-align: center;
+    //         padding-top: 1.40rem;
+    //         margin-left: 0;
+    //         span.nextTitle{
+    //             font-size: 0.30rem;
+    //             margin-left: 1%;
+    //         }
+    //     }
+    // }
+}

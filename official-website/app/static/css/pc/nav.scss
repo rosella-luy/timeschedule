@@ -1,0 +1,103 @@
+$height: 0.80rem;
+$border: 0.01rem solid #062346;
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 30;
+    font-family: "LEXUS-HeiS";
+    background: #01152b;
+    height: $height;
+    .headerBox{
+        position: relative;
+        width: 90%;
+        max-width: 12.3rem;
+        margin: 0 auto;
+        height: 100%;
+        .logo{
+            float: left;
+            padding-left: 0.24rem;
+            height: 100%;
+            img{
+                float: left;
+                height: 0.3rem;
+                padding: 0.25rem 0;
+            }
+        }
+        ul>li{
+            display: inline-block;
+        }
+        .navList{
+            position: relative;
+            float: right;
+            height: 100%;
+            .nav{
+                height: 100%;
+                width: 100%;
+            }
+            li{
+                width: 1.1rem;
+                text-align: center;
+                color: #ffffff;
+                height: 100%;
+                line-height: 0.5rem;
+                cursor: pointer;
+                a{
+                    display: block;
+                    color: #ffffff;
+                    height: 100%;
+                    line-height: $height;
+                    font-size: 0.14rem;
+                }
+                &:hover a{
+                    background: #010d1a;
+                }
+                &.hasNext a{
+                    background: #010d1a;
+                }
+            }
+            .nextNav{
+                position: absolute;
+                top: 0.8rem;
+                left: 1.1rem;
+                width: 2.6rem;
+                z-index: 20;
+                background: #010d1a;
+                li{
+                    width: 100%;
+                    margin-top: 0.34rem;
+                    height: 43px;
+                    line-height: 43px;
+                    a{
+                        .icons{
+                            float: left;
+                            height: 43px;
+                            width: 52px;
+                            margin: 0 0.25rem;
+                        }
+                        // padding-left: 1.02rem;
+                        box-sizing: border-box;
+                        text-align: left;
+                        line-height:43px;
+                    }
+                    &:nth-child(1) a .icons{
+                        background: url(../../img/icons.png) no-repeat 0 0;
+                    }
+                    &:nth-child(2) a .icons{
+                        background: url(../../img/icons.png) no-repeat -52px 0px;
+                    }
+                    &:nth-child(3) a .icons{
+                        background: url(../../img/icons.png) no-repeat -104px 0px;
+                    }
+                    &:nth-child(4){
+                        margin-bottom: 0.34rem;
+                         a .icons{
+                            background: url(../../img/icons.png) no-repeat -156px 0px; 
+                        }
+                    }   
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.tumor{
+    .bannerBack{
+        background: url(../../img/tumorbanner.jpg) no-repeat;
+        background-size: 100% 100%; 
+        margin-bottom: 46%;
+    }
+    h1{
+        font-size: 0.2rem;
+    }
+    p,h4{
+        line-height: 2;
+        font-weight: lighter;
+        text-align: center;
+    }
+    h4{
+        font-size: 0.13rem;
+        margin: 0.25rem 0;
+        color: #06ceff;
+    }
+    p{
+        font-size: 0.12rem;
+        color: #666666;
+    }
+    .detectionBox{
+        .detectionContent{
+            margin: 0 4%;
+        }
+        img{
+            display: none;
+        }
+    }
+    .Box1{
+        padding-bottom: 0.4rem;
+        h1{
+            padding: 0.22rem 0;
+        }
+    }
+    .Box2{
+        background: #e9f1fa;
+        h1{
+            padding: 0.51rem 0 0.25rem;
+        }
+        article p{
+            text-align: left;
+            span{
+                color: #333333;
+            }
+        }
+        padding-bottom: 0.35rem;
+    }
+    .Box3{
+        h1{
+            padding: 0.33rem 0 0.28rem;
+        }
+        padding-bottom: 0.53rem;
+    }
+    
+}

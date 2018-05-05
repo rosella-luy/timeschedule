@@ -1,0 +1,173 @@
+$margin: 0 5%;
+@mixin left(){
+    float: left;
+    width: 40%;
+    margin-right: 5%;
+}
+.productPage header{
+    background: none;
+    z-index: 20;
+    .headerBox .navList li{
+        &:hover a{
+            background: none;
+            color: #aaaaaa;
+        }
+        &.hasNext:hover a{
+            background: #010d1a;
+            color: #ffffff;
+        }
+    }
+    &.scroll{
+        background: #01152b;
+    }
+}
+.FFR{
+    margin-top: -0.8rem;
+    .bannerBack{
+        background: url(../../img/productbanner.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    p,li{
+        font-size: 0.15rem;
+    }
+    h1{
+        color: #333333;
+        font-size: 0.4rem;
+    }
+    .line{
+        width: 0.92rem;
+        height: 0.01rem;
+        background: #06ceff;
+        margin: 0 auto;
+        margin-top: 0.29rem; 
+    }
+    .productInfo{
+        overflow: hidden;
+        h1{
+            margin-top: 1.62rem;
+        }
+        .infoContent{
+            width: 90%;
+            max-width: 12.3rem;
+            margin: 0 auto;
+            margin-top: 0.32rem;
+            p{
+                color: #676c72;
+                text-align: center;
+                line-height: 2;
+
+            }
+        }
+    }
+    .featrue{
+        background: #e9f2fb;
+        overflow: hidden;
+        h1{
+            padding-top: 0.72rem;
+        }
+        .featrueContent{
+            width: 90%;
+            max-width: 12.3rem;
+            margin: 0 auto;
+            margin-top: 0.66rem;
+            overflow: hidden;
+            img{
+                width: 80%;
+                margin: 0 10%;
+            }
+            h4{
+                font-size: 0.24rem;
+                margin-bottom: 0.19rem;
+                margin-top: 0.46rem;
+                color: #333333;
+            }
+            p{
+                font-size: 0.14rem;
+                opacity: 0.8;
+                line-height: 1.5;
+                color: #666666;
+            }
+            ul{
+                width: 100%;
+                li{
+                    background:#ffffff;
+                    float: left;
+                    width: 32%;
+                    margin-right: 2%;
+                    margin-bottom: 0.22rem;
+                    p{
+                        margin-right: 10%;
+                        span{
+                            font-size: 0.2rem;
+                            color: #06ceff;
+                        }
+                    }
+                    &:nth-child(3n){
+                        margin-right: 0;
+                    }
+                    .featrueIcon{
+                        float: left;
+                        width: 86px;
+                        height: 101px;
+                        margin: 0.37rem 0.23rem;
+                    }
+                    .featrueText{
+                        margin-left: 1.32rem;
+                    }
+                    &:nth-child(1) .featrueIcon{
+                        background: url(../../img/icons.png) 0 -43px no-repeat;
+                    }
+                    &:nth-child(2) .featrueIcon{
+                        background: url(../../img/icons.png) -86px -43px no-repeat;
+                    }
+                    &:nth-child(3) .featrueIcon{
+                        background: url(../../img/icons.png) -172px -43px no-repeat;
+                    }
+                    &:nth-child(4) .featrueIcon{
+                        background: url(../../img/icons.png) -258px -43px no-repeat;
+                    }
+                    &:nth-child(5) .featrueIcon{
+                        background: url(../../img/icons.png) -344px -43px no-repeat;
+                    }
+                    &:nth-child(6) .featrueIcon{
+                        background: url(../../img/icons.png) -430px -43px no-repeat;
+                    }
+                }
+            }
+            .lastFeatrue{
+                background: #ffffff;
+                height: 2.93rem;
+                display: table;
+                vertical-align: middle;
+                width: 100%;
+                .featrueText{
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding-left: 1.3rem;
+                }
+                img{
+                    margin: 0.34rem 0;
+                    width: auto;
+                }
+            }
+        }
+        padding-bottom: 1.62rem;
+
+    }
+    .platform{
+        // background: #011021;
+        padding-bottom: 0.72rem;
+        h1{
+            padding-top: 1.29rem;
+        }
+        .platformContent{
+            width: 90%;
+            max-width: 12.3rem;
+            margin: 0 auto;
+            margin-top: 0.83rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

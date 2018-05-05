@@ -1,0 +1,124 @@
+.joinUs{
+    .banner{
+        margin-top: -1px;
+        width: 100%;
+        position:relative;
+        img{
+            width: 100%;
+            opacity: 0.85;
+        }
+        h1{
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 35%;
+            font-size: 0.3rem;
+            color: #ffffff;
+            line-height: 1.5;
+        }
+    }
+    .recruitment{
+        overflow: hidden;
+        h1{
+            text-align: left;
+            margin: 2% 0;
+        }
+        .sideBar{
+            width: 100%;
+            .recruitmentNav{
+                display: flex;
+                li{
+                    flex: 1;
+                    padding: 4% 0;
+                    text-align: center;
+                    height: 0.32rem;
+                    line-height: 0.32rem;
+                    color: #333333;
+                    position:relative;
+                    top: 1px;
+                    z-index: 2;
+                    font-size: 0.14rem;
+                    img{
+                        display: none;
+                    }
+                    &.on{
+                        border-bottom: 2px solid #0abaec;
+                    }
+                }
+                border-bottom: 1px solid #e7e7e7;
+                margin-bottom: 3%;
+            }
+        }
+        .recruitmentContent{
+            margin: 0 4%;
+            .recruitmentLine{
+                margin-bottom: 0.2rem;
+                border: 0.01rem solid #e7e7e7;
+                .titleBox{
+                    overflow: hidden;
+                    padding: 0.2rem 0.1rem;
+                    display: flex;
+                    p{
+                        float: left;
+                        vertical-align: middle;
+                        font-size: 0.14rem;
+                        color: #333333;
+                        height: 0.22rem;
+                        line-height: 0.22rem;
+                        span{
+                            float: left;
+                            background: url(../../img/iconsphone.png) -80px -0px no-repeat;
+                            width: 12px;
+                            margin: 0.05rem 0.1rem 0.05rem 0;
+                            height: 12px;
+                        }
+                        span.on{
+                            height: 3px;
+                            margin-top: 0.09rem;
+                            margin-bottom: 0.09rem;
+                            background: url(../../img/iconsphone.png) -80px -12px no-repeat;
+                        }
+                        &:first-child{
+                            flex: 3;
+                        }
+                        &:nth-child(2){
+                            flex: 1;
+                        }
+                        &.date{
+                            flex: 1.5;
+                            font-size: 0.14rem;
+                            color: #666666;
+                            text-align: right;
+                        }
+                    }
+                }
+                .contentBox{
+                    height: 0;
+                    color: #666666;
+                    font-size: 0.12rem;
+                    padding: 0 0.1rem;
+                    overflow: hidden;
+                    p{
+                        line-height: 1.5;
+                        &:first-child{
+                            margin-top: 0.19rem;
+                        }
+                        &:last-child{
+                            margin-bottom: 0.4rem;
+                        }
+                    }
+                    transition: height 1s;
+                }
+                &:first-child{
+                    margin-top: 0;
+                    .contentBox{
+                        height: auto;
+                    }
+                }
+            }
+            
+        }
+        margin-bottom: 10%;
+    }
+}

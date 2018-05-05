@@ -1,0 +1,96 @@
+$height: 0.5rem;
+$border: 0.01rem solid #062346;
+@mixin clicked(){
+    color: #ffffff;
+    background: #428dc4;
+}
+header{
+    position: relative;
+    display: flex;
+    background: #01152b;
+    height: $height;
+    .logo{
+        flex: 1;
+        .logoIcon{
+            float: left;
+            margin-left: 7%; 
+            height: 0.2rem;
+            padding: 0.15rem 0;
+        }
+        .menuIcon{
+            float: right;
+            margin-right: 7%;
+            height: 0.16rem;
+            padding: 0.17rem 0;
+        }
+    }
+    .navList{
+        position: absolute;
+        left: 0;
+        top: $height;
+        width: 100%;
+        background: #010d1a;
+        z-index: 20;
+        .nav{
+            display: none;
+            background: #010d1a;
+            width: 92%;
+            margin: 0 4%;
+        }
+        li{
+            color: #ffffff;
+            border-bottom: 1px solid #042b55;
+            a{
+                display: block;
+                color: #ffffff;
+                height: 40px;
+                line-height: 40px;
+                font-size: 0.15rem; 
+            }
+            &:hover a{
+                @include clicked();
+            }
+        }
+        .nextNav{
+            overflow: hidden;
+            width: 100%;
+            li{
+                border: 0;
+                a{
+                    font-size: 0.13rem;
+                    .icons{
+                        float: left;
+                        height: 22px;
+                        width: 26px;
+                        margin: 9px 0;
+                        margin-right: 0.11rem;
+                        text-align: center;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                    text-align: left;
+                }
+                // &:nth-child(1) a img{
+                //     background: url(../../img/iconsphone.png) no-repeat 0 0;
+                // }
+                // &:nth-child(2) a img{
+                //     background: url(../../img/iconsphone.png) no-repeat -26px 0px;
+                // }
+                // &:nth-child(3) a img{
+                //     background: url(../../img/iconsphone.png) no-repeat -52px 0px;
+                // }
+                &:nth-child(4){
+                    margin-bottom: 0.11rem;
+                    //  a img{
+                    //     background: url(../../img/iconsphone.png) no-repeat 0 -22px; 
+                    // }
+                }
+            }
+            background: #010d1a;
+        }
+    }
+    .navList.show .nav{
+        display: block;
+    }
+}

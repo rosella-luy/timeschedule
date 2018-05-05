@@ -1,0 +1,161 @@
+$border: 0.01rem solid #e7e7e7;
+.content{
+    margin-top: 0.8rem;
+    overflow: hidden;
+    .slogan{
+        background: #062346;
+        position: relative;
+        width: 100%;
+        height: 5.00rem;
+        overflow: hidden;
+        text-align: center;
+        #slideTitle{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 25.29%;
+            z-index: 10;
+            h1,h2{
+                color: #ffffff;
+                text-align: center;
+                letter-spacing: 0;
+            }
+            h1{
+                font-family: "AvantGardeLT";
+                font-size: 0.60rem;
+                font-weight: bolder;
+            }
+            h2{
+                margin-top: 0.16rem;
+                font-size: 0.31rem;
+                font-weight: lighter;
+            }
+        }
+        ul{
+            opacity: 0.5;
+            height: 100%;
+            li{
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: opacity 2s;
+                -moz-transition: opacity 2s;  /* Firefox 4 */
+                -webkit-transition: opacity 2s;   /* Safari 和 Chrome */
+                -o-transition: opacity 2s;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    // position:absolute; 
+                    // left:50%; 
+                    // margin:0 0 0 -9.60rem;
+                }
+                &.show{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    h1{
+        font-size: 0.40rem;
+        text-align: center;
+        font-weight: lighter;
+        color: #333333;
+    }
+    .contentBox{
+        background: #ffffff;
+        width: 90%;
+        width: 12.3rem;
+        margin: 0 auto; 
+        .products{
+            padding-top: 1.77rem;
+            .list{
+                width: 100%;
+                margin-top: 1.60rem;
+                text-align: center;
+                display: flex;
+                li{
+                    position: relative;
+                    border: $border;
+                    margin-right: 1.7%;
+                    overflow: hidden;
+                    flex: 1;
+                    display: inline-block;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        margin-bottom: 0.5rem;
+                        font-size: 0.18rem;
+                        color: #333333;
+                    }
+                    p:after {
+                        display:inline-block;
+                        width:0;
+                        height:100%;
+                        vertical-align:middle;
+                        content:"";
+                    }
+                }
+            }
+        }
+        .cooperation{
+            padding-top: 1.42rem;
+            padding-bottom: 1.20rem;
+            table{
+                width: 100%;
+                margin-top: 1.39rem;
+                border-right: $border;
+                border-bottom: $border;
+                tr{
+                    display: flex;
+                    td{
+                        position: relative;
+                        box-sizing: border-box;
+                        flex: 1;
+                        text-align: center;
+                        height: 1.4rem;
+                        overflow: hidden;
+                        padding: 0;
+                        border-top: $border;
+                        border-left: $border;
+                        p{
+                            font-size: 0.18rem;
+                            background: #39c7f0;
+                            opacity: 0.8;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 0;
+                            line-height: 1.4rem;
+                            margin-top: -100%;
+                            text-align: center;
+                            color: #ffffff;
+                            transition: height 0.5s,margin-top 0.5s;
+                            -moz-transition: height 0.5s,margin-top 0.5s;  /* Firefox 4 */
+                            -webkit-transition: height 0.5s,margin-top 0.5s;   /* Safari 和 Chrome */
+                            -o-transition: height 0.5s,margin-top 0.5s;
+                        }
+                        img{
+                            height: 0.8rem;
+                            margin: 0.3rem 0;
+                        }
+                        &:hover{
+                            p{
+                                height: 100%;
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,141 @@
+.pacs{
+    .bannerBack{
+        background: url(../../img/productbanner.png) no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 53%;
+    }
+    h1{
+    }
+    h1,h2{
+        text-align: center;
+    }
+    p{
+        font-size: 0.13rem;
+    }
+    .productInfo{
+        overflow: hidden;
+         margin: 0 13%;
+         p{
+            text-indent: 10%;
+            line-height: 2.2;
+         }
+         img{
+            width: 100%;
+         }
+    } 
+    .featrue{
+        overflow: hidden;
+        padding: 0.39rem 0 0.17rem;
+        .featrueContent{
+            width: 90%;
+            max-width: 12.3rem;
+            margin: 0 auto;
+            overflow: hidden;
+            img{
+                width: 80%;
+                margin: 0 10%;
+            }
+            h4{
+                font-size: 0.19rem;
+                margin-bottom: 0.18rem;
+                color: #333333;
+            }
+            p{
+                font-size: 0.13rem;
+                opacity: 0.8;
+                line-height: 1.5;
+                color: #666666;
+            }
+            ul{
+                width: 100%;
+                li{
+                    display: table;
+                    vertical-align: middle;
+                    background: #e9f2fb;
+                    box-sizing: border-box;
+                    border: 1px solid #015367;
+                    width: 100%;
+                    height: 1.1rem;
+                    margin-bottom: 0.12rem;
+                    p{
+                        margin-right: 10%;
+                        span{
+                            font-size: 0.13rem;
+                            color: #06ceff;
+                        }
+                    }
+                    &:nth-child(3n){
+                        margin-right: 0;
+                    }
+                    .featrueIcon{
+                        float: left;
+                        width: 73px;
+                        height: 60px;
+                        margin: 0.25rem 0.22rem;
+                    }
+                    .featrueText{
+                        display: table-cell;
+                        vertical-align: middle;
+                        margin-left: 1.2rem;
+                    }
+                    &:nth-child(1) .featrueIcon{
+                        background: url(../../img/iconsphone.png) -446px 0 no-repeat;
+                    }
+                    &:nth-child(2) .featrueIcon{
+                        background: url(../../img/iconsphone.png) -519px 0 no-repeat;
+                    }
+                    &:nth-child(3) .featrueIcon{
+                        background: url(../../img/iconsphone.png) -592px 0 no-repeat;
+                    }
+                    &:nth-child(4) .featrueIcon{
+                        background: url(../../img/iconsphone.png) -665px 0 no-repeat;
+                    }
+                    &:nth-child(5) .featrueIcon{
+                        background: url(../../img/iconsphone.png) -738px 0 no-repeat;
+                    }
+                    &:nth-child(6) .featrueIcon{
+                        background: url(../../img/iconsphone.png) -811px 0 no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    .customizedSolutions{
+        background: #e9f1fa;
+        padding-bottom: 0.51rem;
+        h1{
+            font-size: 0.19rem;
+            padding: 0.33rem 0 0.35rem;
+        }
+        .solutionContent{
+            margin: 0 4%;
+            li{
+                display: table;
+                vertical-align: middle;
+                background: #ffffff;
+                width: 100%;
+                height: 1.18rem;
+                margin-bottom: 0.15rem;
+                overflow: hidden;
+                img{
+                    float: left;
+                    width: 100%;
+                }
+                .textBox{
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 64%;
+                    padding-left: 0rem;
+                }
+                p{
+                    line-height: 1.5;
+                    font-size: 0.13rem;
+                }
+                p.title{
+                    font-size: 0.19rem;
+                    margin: 3% 0;
+                }
+            }
+        }
+    }
+}

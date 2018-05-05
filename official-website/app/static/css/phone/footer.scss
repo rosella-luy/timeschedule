@@ -1,0 +1,27 @@
+footer{
+    .Inscribed{
+        font-size: 0.10rem;
+        color: #a9bcc7;
+        overflow: hidden;
+        .infor{
+            padding: 0.25rem 4%;
+            background: #01283f;
+            h3{
+                color: #ffffff;
+                margin-bottom: 0.15rem;
+                font-size: 0.14rem;
+            }
+            .phoneNum{
+                margin-bottom: 0.15rem;
+                font-size: 0.14rem;
+            }
+            .email{
+                margin-bottom: 0.07rem;
+            }
+        }
+        .other{
+            padding: 0.1rem 4%;
+            background: #000b12;
+        }
+    }
+}

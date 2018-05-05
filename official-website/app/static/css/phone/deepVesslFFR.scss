@@ -1,0 +1,141 @@
+$margin: 0 4%;
+.FFR{
+    .bannerBack{
+        background: url(../../img/productbanner.png) no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 10%;
+    }
+    p,li{
+        font-size: 0.13rem;
+    }
+    h1{
+        font-size: 0.19rem;
+    }
+    .productInfo{
+        overflow: hidden;
+        h1{
+            line-height: 1.5;
+            padding: 0.28rem 0 0.25rem;
+        }
+        .infoContent{
+            margin: $margin;
+            p{
+                font-size: 0.12rem;
+                line-height: 1.5;
+                text-align: center;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .featrue{
+        background: #e9f2fb;
+        overflow: hidden;
+        h1{
+            padding: 0.31rem 0 0.29rem;
+        }
+        .featrueContent{
+            margin: 0 4%;
+            overflow: hidden;
+            img{
+                width: 80%;
+                margin: 0 10%;
+            }
+            h4{
+                font-size: 0.19rem;
+                color: #333333;
+                margin-bottom: 0.18rem; 
+            }
+            p{
+                font-size: 0.13rem;
+                opacity: 0.8;
+                line-height: 1.5;
+                color: #666666;
+            }
+            ul{
+                width: 100%;
+                li{
+                    display: table;
+                    vertical-align: middle;
+                    background:#ffffff;
+                    width: 100%;
+                    height: 1.1rem;
+                    margin-bottom: 0.14rem;
+                    p{
+                        margin-right: 10%;
+                        span{
+                            font-size: 0.13rem;
+                            color: #06ceff;
+                        }
+                    }
+                    &:nth-child(3n){
+                        margin-right: 0;
+                    }
+                    .featrueIcon{
+                        float: left;
+                        width: 59px;
+                        height: 70px;
+                        margin: 0.20rem 0.3rem;
+                    }
+                    .featrueText{
+                        display: table-cell;
+                        vertical-align: middle;
+                        margin-left: 1.3rem;
+                    }
+                    &:nth-child(1) .featrueIcon{
+                        background: url(../../img/iconsphone.png) -92px 0 no-repeat;
+                    }
+                    &:nth-child(2) .featrueIcon{
+                        background: url(../../img/iconsphone.png) -151px 0 no-repeat;
+                    }
+                    &:nth-child(3) .featrueIcon{
+                        background: url(../../img/iconsphone.png) -210px 0 no-repeat;
+                    }
+                    &:nth-child(4) .featrueIcon{
+                        background: url(../../img/iconsphone.png) -269px 0 no-repeat;
+                    }
+                    &:nth-child(5) .featrueIcon{
+                        background: url(../../img/iconsphone.png) -328px 0 no-repeat;
+                    }
+                    &:nth-child(6) .featrueIcon{
+                        background: url(../../img/iconsphone.png) -387px 0 no-repeat;
+                    }
+                }
+            }
+            .lastFeatrue{
+                background: #ffffff;
+                width: 100%;
+                padding-top: 0.2rem;
+                text-align: center;
+                .featrueText{
+                    width: 100%;
+                    h4,p{
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 0.12rem;
+                    }
+                }
+                img{
+                    width: 65%;
+                    margin: 0.34rem auto 0.2rem;
+                }
+            }
+        }
+        padding-bottom: 10%;
+
+    }
+    .platform{
+        h1{
+            margin-top: 0.4rem;
+            margin-bottom: 0.23rem;
+        }
+        .platformContent{
+            img{
+                width: 100%;
+            }
+            padding-bottom: 0.08rem;
+        }
+    }
+}
